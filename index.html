@@ -9,6 +9,9 @@
 <body>
   <h1>Twitter Search</h1>
   <div ng-controller="mainCtrl">
+    <form ng-submit="doSearch()" name="myForm">
+      <input type="text" ng-model="query" required>
+      <input type="submit" value="search" ng-disabled="myForm.$invalid">
   </div>
 </body>
 </html>
